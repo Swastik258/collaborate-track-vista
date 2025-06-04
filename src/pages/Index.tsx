@@ -1,17 +1,10 @@
 
 import React from 'react';
-import { Sidebar } from '@/components/Sidebar';
-import { Dashboard } from '@/components/Dashboard';
+import { Navigate } from 'react-router-dom';
 
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-gray-50 flex">
-      <Sidebar />
-      <main className="flex-1 p-6">
-        <Dashboard />
-      </main>
-    </div>
-  );
+  // Redirect to home page since we now have a proper landing page
+  return <Navigate to="/" replace />;
 };
 
 export default Index;
